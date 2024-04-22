@@ -13,6 +13,11 @@
         <link rel="stylesheet" href="./assets/style/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+        <!-- Font Files -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&display=swap" rel="stylesheet">
+
         <!-- Link Swiper's CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -22,66 +27,236 @@
 
         
         <header>
-            <!-- Swiper -->
-            <div class="hero">
+
+            <!-- nav -->
+            <nav class="navbar navbar-expand-lg fixed-top py-1 px-5">
                 <div class="container">
+                    <!-- logo -->
+                    <div class="navbar-brand mx-4">
+                        <img src="./assets/img/fc-barcelona.svg" alt="">  
+                    </div>
+                    <!-- toggle button -->
+                    <button 
+                    class="navbar-toggler shadow-none border-0"
+                     type="button" 
+                     data-bs-toggle="offcanvas"
+                     data-bs-target="#mainmenu"
+                     aria-controls="mainmenu">
+                     
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    </div>
+                    <!-- sidebar -->
+                    <div 
+                    class="sidebar offcanvas offcanvas-start"
+                    tabindex="-1"
+                    id="mainmenu"
+                    aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header border-bottom">
+                            <h5 class="offcanvas-title mx-2 fw-bold fs-4" id="offcanvasNavbarLabel">Barcelona</h5>
+                            <button 
+                            type="button"
+                            class="btn-close shadow-none"
+                            data-bs-dismiss="offcanvas" 
+                            aria-label="close">
+                            </button>
+                        </div>
+                        <!-- sidebar body -->
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                                <li class="nav-item mx-4">
+                                    <a class="nav-link fw-bold fs-4" aria-current="page" href="#Home">Home </a></li>
+                                <li class="nav-item mx-4"><a class="nav-link fw-bold fs-4"  href="#Players">Players</a></li>
+                                <li class="nav-item mx-4"><a class="nav-link fw-bold fs-4"  href="#team">Team </a></li>
+                                <li class="nav-item mx-4"><a class="nav-link fw-bold fs-4"  href="#videos">videos</a></li>
+                                <li class="nav-item mx-4"><a class="nav-link fw-bold fs-4"  href="#gools">Gools</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Hero -->
+            <div class="hero position-relative d-flex align-items-center" id="Home">
+                <div class="container d-flex align-items-center flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between h-100">
+                    <div class="col-lg-5 col-md-12 text-center text-lg-start">
+                        <h1 class="text-white fw-bold">Barcalona</h1>
+                        <p class="text-white fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nihil id dignissimos velit incidunt aspernatur odit molestias! Molestiae, eum? Corporis alias error dicta ipsam suscipit repellendus eaque ea nesciunt, odit cum fugiat amet?</p>
+                    </div>
+                    <img class="col-lg-4 col-md-12 img-fluid" src="./assets/img/fc-barcelona.svg">
+                </div>
+            </div>
+        
+        </header>
+
+        <main>
+
+            <!-- Section 1 -->
+            <section class="slider pt-5" id="Players">
+                <div class="container">
+                    <h1 class="text-white text-center fw-bold">Players</h1>
                     <div class="swiper d-flex justify-content-center align-items-center">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide rounded shadow p-3 d-flex justify-content-center align-items-center position-relative" data-bs-toggle="modal" data-bs-target="#Ronaldinho">
+                        <div class="swiper-wrapper mt-3 mb-5">
+                            <div class="swiper-slide rounded shadow p-3 d-flex justify-content-center align-items-center position-relative">
+                                <img src="./assets/img/lionel-mess.png" class="img-fluid h-100 position-absolute">
+                            </div>
+                            <div class="swiper-slide rounded shadow p-3 d-flex justify-content-center align-items-center position-relative">
                                 <img src="./assets/img/Ronaldinho.png" class="img-fluid h-100 position-absolute">
                             </div>
-                            <div class="swiper-slide rounded shadow p-3 d-flex justify-content-center align-items-center position-relative" data-bs-toggle="modal" data-bs-target="#Ronaldinho">
-                                <img src="./assets/img/Ronaldinho.png" class="img-fluid h-100 position-absolute">
+                            <div class="swiper-slide rounded shadow p-3 d-flex justify-content-center align-items-center position-relative">
+                                <img src="./assets/img/inesta.png" class="img-fluid h-100 position-absolute">
                             </div>
-                            <div class="swiper-slide rounded shadow p-3 d-flex justify-content-center align-items-center position-relative" data-bs-toggle="modal" data-bs-target="#Ronaldinho">
-                                <img src="./assets/img/Ronaldinho.png" class="img-fluid h-100 position-absolute">
+                            <div class="swiper-slide rounded shadow p-3 d-flex justify-content-center align-items-center position-relative">
+                                <img src="./assets/img/tchaf.png" class="img-fluid h-100 position-absolute">
                             </div>
-                            <div class="swiper-slide rounded shadow p-3 d-flex justify-content-center align-items-center position-relative" data-bs-toggle="modal" data-bs-target="#Ronaldinho">
-                                <img src="./assets/img/Ronaldinho.png" class="img-fluid h-100 position-absolute">
+                            <div class="swiper-slide rounded shadow p-3 d-flex justify-content-center align-items-center position-relative">
+                                <img src="./assets/img/soarize.png" class="img-fluid h-100 position-absolute">
                             </div>
-                            <div class="swiper-slide rounded shadow p-3 d-flex justify-content-center align-items-center position-relative" data-bs-toggle="modal" data-bs-target="#Ronaldinho">
-                                <img src="./assets/img/Ronaldinho.png" class="img-fluid h-100 position-absolute">
+                            <div class="swiper-slide rounded shadow p-3 d-flex justify-content-center align-items-center position-relative">
+                                <img src="./assets/img/nemar.png" class="img-fluid h-100 position-absolute">
                             </div>
-                            <div class="swiper-slide rounded shadow p-3 d-flex justify-content-center align-items-center position-relative" data-bs-toggle="modal" data-bs-target="#Ronaldinho">
-                                <img src="./assets/img/Ronaldinho.png" class="img-fluid h-100 position-absolute">
+                            <div class="swiper-slide rounded shadow p-3 d-flex justify-content-center align-items-center position-relative">
+                                <img src="./assets/img/player5.png" class="img-fluid h-100 position-absolute">
                             </div>
-                            <div class="swiper-slide rounded shadow p-3 d-flex justify-content-center align-items-center position-relative" data-bs-toggle="modal" data-bs-target="#Ronaldinho">
-                                <img src="./assets/img/Ronaldinho.png" class="img-fluid h-100 position-absolute">
+                            <div class="swiper-slide rounded shadow p-3 d-flex justify-content-center align-items-center position-relative">
+                                <img src="./assets/img/player7png" class="img-fluid h-100 position-absolute">
                             </div>
-                            <div class="swiper-slide rounded shadow p-3 d-flex justify-content-center align-items-center position-relative" data-bs-toggle="modal" data-bs-target="#Ronaldinho">
-                                <img src="./assets/img/Ronaldinho.png" class="img-fluid h-100 position-absolute">
-                            </div>
-                            <div class="swiper-slide rounded shadow p-3 d-flex justify-content-center align-items-center position-relative" data-bs-toggle="modal" data-bs-target="#Ronaldinho">
-                                <img src="./assets/img/Ronaldinho.png" class="img-fluid h-100 position-absolute">
+                            <div class="swiper-slide rounded shadow p-3 d-flex justify-content-center align-items-center position-relative">
+                                <img src="./assets/img/pngegg.png" class="img-fluid h-100 position-absolute">
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-            </div>
-            
+            </section>
+
+            <!-- Section 2 -->
+            <section class="team row d-flex m-0" id="team">
+                <div class="col-lg-6 col-md-12 h-100 p-0">
+                    <img src="./assets/img/team.jpg" class="img-fluid h-100">
+                </div>
+                <div class="col-lg-6 col-md-12 h-100 p-3 d-flex justify-content-center flex-column p-0 h-100">
+                    <h1 class="text-white fw-bold text-uppercase">visca barca</h1>
+                    <p class="text-white fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente architecto, minus recusandae repudiandae exercitationem quia iusto ullam porro aut eligendi veritatis, ipsam, hic ex. Est sunt laudantium iusto quas commodi voluptatem in aperiam?</p>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section class="sec-3 pt-5 pb-5" id="videos">
+                <h1 class="text-white text-center fw-bold mb-4">Open The Cards To Display Videos</h1>
+                <div class="container">
+                    <div class="row cards">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mt-2 mb-2">
+                            <div class="card card-1 position-relative shadow rounded d-flex justify-content-center align-items-center">
+                                <i class="icon fa-solid fa-plus position-absolute rounded" data-bs-toggle="modal" data-bs-target="#Modal1"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mt-2 mb-2">
+                            <div class="card card-2 position-relative shadow rounded d-flex justify-content-center align-items-center">
+                                <i class="icon fa-solid fa-plus position-absolute rounded" data-bs-toggle="modal" data-bs-target="#Modal2"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mt-2 mb-2">
+                            <div class="card card-3 position-relative shadow rounded d-flex justify-content-center align-items-center">
+                                <i class="icon fa-solid fa-plus position-absolute rounded" data-bs-toggle="modal" data-bs-target="#Modal3"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4 -->
+            <section class="sec-4 pt-5 pb-5" id="gools">
+                <h1 class="text-white text-center fw-bold mb-4">Gools</h1>
+                <div class="container">
+                    <div class="row cards d-flex justify-content-center">
+                        <div class="col-lg-6 col-md-12  mt-2 mb-2">
+                            <div class="card position-relative shadow rounded d-flex justify-content-center align-items-center">
+                                <img src="./assets/img/gool-1.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12  mt-2 mb-2">
+                            <div class="card position-relative shadow rounded d-flex justify-content-center align-items-center">
+                                <img src="./assets/img/gool-2.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12  mt-2 mb-2">
+                            <div class="card position-relative shadow rounded d-flex justify-content-center align-items-center">
+                                <img src="./assets/img/gool-3.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12  mt-2 mb-2">
+                            <div class="card position-relative shadow rounded d-flex justify-content-center align-items-center">
+                                <img src="./assets/img/gool-4.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12  mt-2 mb-2">
+                            <div class="card position-relative shadow rounded d-flex justify-content-center align-items-center">
+                                <img src="./assets/img/gool-5.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12  mt-2 mb-2">
+                            <div class="card position-relative shadow rounded d-flex justify-content-center align-items-center">
+                                <img src="./assets/img/gool-6.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12  mt-2 mb-2">
+                            <div class="card position-relative shadow rounded d-flex justify-content-center align-items-center">
+                                <img src="./assets/img/gool-7.png" class="img-fluid">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
 
             <!-- Modal -->
-            <div class="modal fade" id="Ronaldinho" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
+            <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body row d-flex align-items-center justify-content-evenly">
-                            <div class="col-5">
-                                <h1>Ronaldinho</h1>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum blanditiis qui ex.</p>
-                            </div>
-                            <div class="col-4 text-center">
-                                <img src="./assets/img/Ronaldinho.png" class="img-fluid">
-                            </div>
+                        <div class="modal-body text-center">
+                            <video controls src="./assets/video/VID-20230320-WA0000.mp4"></video>
                         </div>
                     </div>
                 </div>
             </div>
-            
-        </header>
+
+            <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <video controls src="./assets/video/VID-20230312-WA0003.mp4"></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <video controls src="./assets/video/VID-20230420-WA0000.mp4"></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+        </main>
+
+        <!-- footer -->
+        <footer class="pt-2 pb-2 text-center ">
+            <h5 class="text-dark fw-bold m-2">Copyright &copy; Fatimah Mselmani | Haneen Hariri</h5>
+        </footer>
         
         <!-- JS Files -->
         <script src="./assets/js/all.min.js"></script>

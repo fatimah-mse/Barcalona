@@ -29,7 +29,3 @@ var swiper = new Swiper(".swiper", {
     },
     }
 });
-
-function model_show () {
-    
-}

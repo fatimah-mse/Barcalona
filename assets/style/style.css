@@ -2,25 +2,137 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Indie Flower", cursive;
+}
+h1 {
+    font-size: 60px;
+}
+p {
+    font-size: 20px;
+}
+h1 , p {
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+.navbar , footer
+{
+    background-color: #deb405;
+}
+.navbar .nav-link,h5
+{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 100;
+}
+.navbar-brand  img{
+    width: 40px;
 }
 .hero {
+    padding-top: 60px;
     height: 100vh;
-    background-color: darkblue;
+    background-color: #00529f;
 }
-.swiper {
-    height: 100vh;
+.slider , .sec-3 {
+    background-color: #992239;
 }
+
 .swiper-wrapper {
-    height: 70% !important;
+    height: 300px !important;
 }
 .swiper-slide {
     background-color: #fff;
     overflow: hidden;
+    backdrop-filter: blur(10px);
 }
 .swiper-slide img {
     bottom: -10px;
 }
-.modal img {
-    height: 50vh;
+.team div:nth-child(2) , .sec-4 {
+    background-color: #00529f;
+}
+.card {
+    background-color: #fff;
+    height: 300px;
+    transition: .6s ease-in-out;
+    cursor: pointer;
+}
+.cards div .card-1 {
+    background: url(../img/card-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.cards div .card-2 {
+    background: url(../img/card-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.cards div .card-3 {
+    background: url(../img/card-3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card .icon {
+    font-size: 100px;
+    color: #00529f;
+    background-color: #004c9875;
+    backdrop-filter: blur(10px) ;
+    height: 0;
+    width: 100%;
+    transition: all 0.6s ease-in-out;
+}
+.card:hover .icon {
+    height: 100%;
+}
+.modal-body video {
+    height: 400px;
+}
+@media screen and (min-width:991px) {
+    .team{
+        height: 404px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .hero img {
+        width: 250px;
+    }
+    .navbar .nav-link,h5
+    {
+        color: #fff;
+    }
+}
+@media screen and (max-width:578px) {
+    .hero img {
+        width: 250px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p , footer h5 {
+        font-size: 15px;
+    }
+}
+@media (min-width:576px) and (max-width:768px){
+    .sidebar 
+    {
+        background-color: #004c9875;
+        backdrop-filter: blur(20px) ;
+    }
+    .footer2 
+    {
+        flex-wrap: wrap;
+    }
+}
+@media (min-width:300px) and (max-width:576px)
+{
+    .sidebar 
+    {
+        background-color: #004c9875;
+        backdrop-filter: blur(20px) ;
+    }
+    .footer2 
+    {
+        flex-wrap: wrap;
+        font-size: small;
+    }
 }
